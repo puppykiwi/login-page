@@ -1,1 +1,7 @@
-This is a sample login page to learn about PHP.
+This is a simple website with login functionality
+
+Stack
+-PHP
+-JSON
+-Nginx
+-Linux
