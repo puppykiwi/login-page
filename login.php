@@ -16,19 +16,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($users as $user) {
             if ($user['username'] === $username) {
                 $foundUser = $user;
-                var_dump($foundUser);
+                //var_dump($foundUser);
                 break;
             }
         }
 
         
-        if ($foundUser !== null && password_verify($password, $foundUser['password'])) {
+        //if ($foundUser !== null && password_verify($password, $foundUser['password'])) {
+        if ($foundUser !== null && $password == $foundUser['password']) {
+            
             
             $_SESSION['username'] = $username;
-            header('Location: dashboard.html');
+            header('Location: /dashboard.html');
+            //var_dump($username); debug
             exit();
         } else {
-            echo 'Invalid username or password.';
+            echo 'Invalid username or password. no';
         }
     }
 }
