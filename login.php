@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'Please enter both username and password.';
     } else {
         //deserializer
-        $users = json_decode(file_get_contents('users.json'), true);
+        $users = json_decode(file_get_contents('data/users.json'), true);
 
         $foundUser = null;
         foreach ($users as $user) {
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             
             $_SESSION['username'] = $username;
-            header('Location: /dashboard.html');
+            header('Location: /html/dashboard.html');
             //var_dump($username); debug
             exit();
         } else {
