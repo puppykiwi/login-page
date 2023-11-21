@@ -1,6 +1,6 @@
 [
     {"username": "user1", "password": "$2y$10$RER6O/xL8gtrP8qf5YPVVObY/sagCjrmKbJp8Ighx5eGWBObuDjZG"},
-    {"username": "user2", "password": "$2y$10$V0/zQuXr9G5mLpeF0.Za4.2apj9BshR/ILR7vDsPqLweu9c1BP1U2"},
+    {"username": "user2", "password": "user2"},
     {"username": "test", "password": "password"}
 ]
 
